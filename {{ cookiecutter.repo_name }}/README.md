@@ -3,6 +3,13 @@
 
 {{cookiecutter.description}}
 
+Bash RC 
+export VIRTUALENVWRAPPER_PYTHON='/usr/local/bin/python3'
+export WORKON_HOME=$$HOME/.virtualenvs\nexport
+export PROJECT_HOME=$$HOME/Devel\nsource
+source /usr/local/bin/virtualenvwrapper.sh
+
+
 Project Organization
 ------------
 

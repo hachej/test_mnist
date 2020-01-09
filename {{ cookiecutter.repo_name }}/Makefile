@@ -1,4 +1,4 @@
-.PHONY: clean data lint requirements sync_data_to_s3 sync_data_from_s3
+.PHONY: clean data lint requirements sync_data_to_s3 sync_data_from_s3 setup_atom
 
 #################################################################################
 # GLOBALS                                                                       #
@@ -74,6 +74,7 @@ else
 	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
 endif
 
+#setup Atom kernel
 setup_atom:
 ifeq (True,$(SETUP_ATOME))
 	$(PYTHON_INTERPRETER) -m pip install -q ipykernel
