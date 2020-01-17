@@ -5,10 +5,10 @@
 #################################################################################
 
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
-BUCKET = ngsens-scraping
-PROFILE = default
-PROJECT_NAME = ngsens-dataapp
-PYTHON_INTERPRETER = python3
+BUCKET = 
+PROFILE =
+PROJECT_NAME = 
+PYTHON_INTERPRETER =
 SETUP_ATOME = True
 
 
