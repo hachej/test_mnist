@@ -9,9 +9,9 @@ When you create a new project the following parameters have to be defined: <p>
  - aws_profile : the AWS CLI profile to use<p>
 <p>
 
+Install cookiecutter
 
 ``` bash
-install cookiecutter
 $ pip install cookiecutter
 $ cookiecutter https://axomtech@bitbucket.org/axomdev/dataproject.git
 ```
