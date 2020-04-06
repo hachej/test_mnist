@@ -5,12 +5,11 @@
 #################################################################################
 
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
-BUCKET = 
+BUCKET =
 PROFILE =
-PROJECT_NAME = 
+PROJECT_NAME =
 PYTHON_INTERPRETER =
 SETUP_ATOME = True
-
 
 ifeq (,$(shell which conda))
 HAS_CONDA=False
