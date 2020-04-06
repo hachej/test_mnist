@@ -5,10 +5,10 @@
 #################################################################################
 
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
-BUCKET =
-PROFILE =
-PROJECT_NAME =
-PYTHON_INTERPRETER =
+BUCKET = {{ cookiecutter.s3_bucket }}
+PROFILE = {{ cookiecutter.aws_profile }}
+PROJECT_NAME = {{ cookiecutter.repo_name }}
+PYTHON_INTERPRETER =  {{ cookiecutter.python_interpreter }}
 SETUP_ATOME = True
 
 ifeq (,$(shell which conda))
@@ -72,6 +72,7 @@ else
 	@bash -c "source `which virtualenvwrapper.sh`;mkvirtualenv $(PROJECT_NAME) --python=$(PYTHON_INTERPRETER)"
 	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
 endif
+$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
 
 #setup Atom kernel
 setup_atom:
