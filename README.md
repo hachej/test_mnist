@@ -1,13 +1,11 @@
-
-############## Start a new project #############################################
-
 This repo contains the standard structure of a data projet at Axom.
-When you create a new project the following parameters have to be defined: <p>
- - project_name : name of your project <p>
- - repo name : name of the repo with which the git will be initialized <p>
- - s3 bucket : name of the bucket where the data will be pulled / pushed <p>
- - aws_profile : the AWS CLI profile to use<p>
-<p>
+When you create a new project the following parameters have to be defined: <br />
+ - project_name : name of your project <br />
+ - repo name : name of the repo with which the git will be initialized <br />
+ - s3 bucket : name of the bucket where the data will be pulled / pushed <br />
+ - aws_profile : the AWS CLI profile to use<br />
+
+
 
 Install cookiecutter
 
