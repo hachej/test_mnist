@@ -72,7 +72,6 @@ else
 	@bash -c "source `which virtualenvwrapper.sh`;mkvirtualenv $(PROJECT_NAME) --python=$(PYTHON_INTERPRETER)"
 	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
 endif
-$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
 
 #setup Atom kernel
 setup_atom:
