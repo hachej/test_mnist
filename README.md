@@ -11,7 +11,7 @@ When you create a new project the following parameters have to be defined:
 
 ```bash
 $ pip install cookiecutter
-$ cookiecutter https://axomtech@bitbucket.org/axomdev/dataproject.git
+$ cookiecutter https://axomtech@bitbucket.org/axomdev/dataproj-starter-py.git
 ```
 
 ### Setup Sphinx
