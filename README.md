@@ -13,3 +13,11 @@ When you create a new project the following parameters have to be defined:
 $ pip install cookiecutter
 $ cookiecutter https://axomtech@bitbucket.org/axomdev/dataproject.git
 ```
+
+### Setup Sphinx
+
+```bash
+$ make create_environment
+$ workon yourenv
+$ pip3 install -r requirements.txt
+```
