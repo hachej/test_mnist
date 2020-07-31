@@ -1,1 +1,2 @@
 .env filter=git-crypt diff=git-crypt
+.dbconfig.json filter=git-crypt diff=git-crypt
