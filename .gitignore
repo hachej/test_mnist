@@ -74,6 +74,7 @@ target/
 
 # exclude data from source control by default
 /data/
+serialized-models/
 
 # Mac OS-specific storage files
 .DS_Store
