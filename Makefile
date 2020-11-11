@@ -5,7 +5,7 @@
 #################################################################################
 
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
-PROJECT_NAME = dataprod-starter-py
+PROJECT_NAME = $(shell basename $(CURDIR))
 PYTHON_INTERPRETER = python3
 
 #################################################################################
