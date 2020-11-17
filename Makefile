@@ -6,6 +6,7 @@
 
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 PROJECT_NAME = $(shell basename $(CURDIR))
+PROJECT_CODE = $(shell echo $(PROJECT_NAME) | cut -c1-3 | tr [a-z] [A-Z])
 PYTHON_INTERPRETER = python3
 
 #################################################################################
@@ -23,7 +24,8 @@ create_environment:
 	source ~/.local/bin/virtualenvwrapper.sh"
 	@bash -c "source `which virtualenvwrapper.sh`;mkvirtualenv $(PROJECT_NAME) --python=$(PYTHON_INTERPRETER)"
 	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
-	@echo "PATH_ROOT=$(PWD)" > .env.local
+	@echo "PATH_ROOT=$(CURDIR)" > .env.local
+	@echo "PROJECT_CODE=$(PROJECT_CODE)" > .env.local
 
 ## setup kernel
 create_kernel:
