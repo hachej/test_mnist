@@ -25,7 +25,7 @@ create_environment:
 	@bash -c "source `which virtualenvwrapper.sh`;mkvirtualenv $(PROJECT_NAME) --python=$(PYTHON_INTERPRETER)"
 	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
 	@echo "PATH_ROOT=$(CURDIR)" > .env.local
-	@echo "PROJECT_CODE=$(PROJECT_CODE)" > .env.local
+	@echo "PROJECT_CODE=$(PROJECT_CODE)" >> .env.local
 
 ## setup kernel
 create_kernel:
