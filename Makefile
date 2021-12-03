@@ -15,13 +15,13 @@ PYTHON_INTERPRETER = python3
 
 check_python_version:  # Python 3.8 required
 	@hash $(PYTHON_INTERPRETER) 2> /dev/null \
-		&& [ `$(PYTHON_INTERPRETER) -V 2>&1 | sed 's/.* \([0-9]\).\([0-9]\).*/\1\2/'` -eq "38" ] \
+		&& [ `$(PYTHON_INTERPRETER) -V 2>&1 | sed 's/.* \([0-9]\).\([0-9]\).*/\1\2/'` -eq "36" ] \
 		&& exit 0 \
 		|| (echo "Python 3.8 required" 1>&2; exit 1)
 
 
 ## Set up python interpreter environment
-create_environment: check_python_version
+create_environment:
 
 	@echo CREATE ENVIRONMENT
 	$(PYTHON_INTERPRETER) -m pip install -q virtualenv virtualenvwrapper
