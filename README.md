@@ -21,5 +21,3 @@ make create_kernel
 ```bash
 pip install -r requirements.txt
 ```
-
-- Step 5: edit `.dbconfig.json`
